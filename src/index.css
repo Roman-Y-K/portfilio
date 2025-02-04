@@ -9,8 +9,24 @@
 }
 
 body {
-  background: #010103;
+  /* background: #010103; */
   font-family: 'General Sans', sans-serif;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  display: block;
+  height: 300%;
+  width: 300%;
+  top: -110%;
+  left: -50%;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  pointer-events: none;
+  background-image: url('https://rosefamily.com.ua/images/noise.png');
+  opacity: 0.5;
 }
 
 @layer utilities {
@@ -27,11 +43,11 @@ body {
   }
 
   .nav-li {
-    @apply text-neutral-400 hover:text-white font-generalsans max-sm:hover:bg-black-500 max-sm:w-full max-sm:rounded-md py-2 max-sm:px-5;
+    @apply text-navLink hover:text-accentText font-generalsans max-sm:hover:bg-black-500 max-sm:w-full max-sm:rounded-md py-2 max-sm:px-5;
   }
 
   .nav-li_a {
-    @apply text-lg md:text-base hover:text-white transition-colors;
+    @apply text-lg md:text-base hover:text-accentText transition-colors;
   }
 
   .nav-sidebar {
