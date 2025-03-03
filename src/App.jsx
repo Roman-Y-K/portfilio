@@ -1,15 +1,16 @@
-import React from 'react';
-
-import NavBar from './sections/Navbar';
-import Hero from './sections/Hero';
+import Hero from './components/hero/Hero';
+import Portfolio from './components/portfolio/Portfolio';
 
 const App = () => {
   return (
-    <main className="max-w-7xl">
-      <h1 className="text-2xl text-white underline"></h1>
-      <NavBar />
-      <Hero />
-    </main>
+    <div className="container">
+      <section>
+        <Hero id="#hero" />
+      </section>
+      <section>
+        <Portfolio id="#portfolio" />
+      </section>
+    </div>
   );
 };
 
