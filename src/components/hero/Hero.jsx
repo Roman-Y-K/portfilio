@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { Suspense } from 'react';
-import { Canvas } from '@react-three/fiber';
+import { Canvas, useThree } from '@react-three/fiber';
 
 import Speech from './Speech';
 import Shape from './Shape';
@@ -101,6 +101,7 @@ const Hero = () => {
           </svg>
         </motion.a>
       </div>
+
       <div className="hero_section right">
         <motion.div
           className="hero_follow"
@@ -118,7 +119,9 @@ const Hero = () => {
             <div className="follow_text">FOLLOW</div>
           </motion.div>
         </motion.div>
+
         <Speech />
+
         <motion.div
           animate={{ opacity: [0, 1] }}
           transition={{ duration: 1 }}
@@ -131,6 +134,7 @@ const Hero = () => {
           <br />
           REACT DEVELOPER
         </motion.div>
+
         <motion.a
           href="/#contact"
           className="hero_contact"
@@ -185,11 +189,15 @@ const Hero = () => {
         </motion.a>
       </div>
       <div className="hero_bg">
-        <Canvas>
+        {/* <Canvas
+          dpr={[1, 1]}
+          gl={{ powerPreference: 'low-power' }}
+          frameloop="always"
+        >
           <Suspense fallback="loading...">
             <Shape />
           </Suspense>
-        </Canvas>
+        </Canvas> */}
 
         <div className="hero_image">
           <img src="/hero.png" alt="" />

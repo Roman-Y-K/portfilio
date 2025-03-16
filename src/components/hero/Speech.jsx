@@ -21,7 +21,6 @@ const Speech = () => {
           wrapper="span"
           speed={40}
           deletionSpeed={60}
-          // omitDeletionAnimation
           repeat={Infinity}
         />
       </div>

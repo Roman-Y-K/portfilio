@@ -2,6 +2,7 @@
   height: 100%;
   overflow: hidden;
   display: flex;
+  position: relative;
 }
 
 .hero_section {
@@ -163,13 +164,13 @@
   left: 0;
   margin: auto;
   height: 80%;
-  width: max-content;
+  /* width: max-content; */
 }
 
 .hero_image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 @media (max-width: 1536px) {
@@ -236,4 +237,8 @@
   .hero_certificate {
     display: none;
   }
+
+  /* .hero_contact {
+    margin-bottom: 0px;
+  } */
 }
