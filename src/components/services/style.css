@@ -1,10 +1,5 @@
-.services {
-  height: 100%;
-  overflow: hidden;
-  display: flex;
-}
-
-.services_section {
+.services,
+.service-details {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -12,17 +7,17 @@
   gap: 24px;
 }
 
-.services_title {
+.services-title {
   font-size: 88px;
 }
 
-.service_list {
+.services-list {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.service_item {
+.services-item {
   width: 60%;
   padding: 30px;
   border-radius: 20px;
@@ -33,7 +28,7 @@
   cursor: pointer;
 }
 
-.service_icon {
+.service-icon {
   min-width: 48px;
   height: 48px;
   border-radius: 100%;
@@ -42,47 +37,42 @@
   justify-content: center;
 }
 
-.service_icon img {
+.service-icon img {
   width: 24px;
   height: 24px;
 }
 
-.service_info {
+.service-info {
   font-size: 20px;
   font-weight: 500;
 }
 
-.service_info h3 {
+.service-info h3 {
   font-size: 13px;
   font-weight: 300;
 }
 
-.service_item:nth-child(1) .service_icon {
+.services-item:nth-child(1) .service-icon {
   background-color: #dd4c62;
 }
-.service_item:nth-child(2) .service_icon {
+.services-item:nth-child(2) .service-icon {
   background-color: #025656;
 }
-.service_item:nth-child(3) .service_icon {
+.services-item:nth-child(3) .service-icon {
   background-color: #6c5c0c;
 }
 
-.service_techologies {
-  display: flex;
-  gap: 10px;
-}
-
-.service_name {
+.details-title {
   font-size: 26px;
   text-shadow: 5px -5px 5px #2f213f;
   margin-bottom: 30px;
 }
 
-.service_list_item {
+.details-item {
   font-size: 20px;
 }
 
-.service_list_item:not(:last-child) {
+.details-item:not(:last-child) {
   margin-bottom: 10px;
 }
 
@@ -91,33 +81,29 @@
 }
 
 @media (max-width: 1024px) {
-  .services {
-    align-items: center;
-    justify-content: center;
-  }
-
-  .services_title {
+  .services-title {
     font-size: 50px;
   }
 
-  .services_section {
+  .services,
+  .service-details {
     width: 100%;
   }
 
-  .services_section.right {
+  .service-details {
     display: none;
   }
 
-  .service_item {
+  .services-item {
     width: 90%;
   }
 }
 
 @media (max-width: 540px) {
-  .services_title {
+  .services-title {
     font-size: 70px;
   }
-  .service_info {
+  .service-info {
     font-size: 15px;
   }
 }

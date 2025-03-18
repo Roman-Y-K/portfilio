@@ -1,10 +1,5 @@
-.contact {
-  height: 100%;
-  display: flex;
-  gap: 100px;
-}
-
-.contact-section {
+.contacts-form,
+.contacts-image {
   width: 50%;
   height: 100%;
   padding: 20px;
@@ -13,20 +8,40 @@
   justify-content: center;
 }
 
-.contact-section.right {
+.contacts-image {
   background-color: rgba(2, 2, 45, 0.187);
   margin: 50px 0px;
   padding: 50px;
   border-radius: 50% 0px;
 }
 
+.tooltip {
+  position: absolute;
+  color: red;
+  font-size: 12px;
+  display: block;
+  bottom: -16px;
+}
+
+.success-message,
+.error-message {
+  position: absolute;
+  color: green;
+  font-size: 14px;
+  bottom: -40px;
+}
+
+.error-message {
+  color: red;
+}
+
 form {
+  position: relative;
   width: 80%;
   display: flex;
   flex-direction: column;
   gap: 20px;
   background-color: rgba(2, 2, 45, 0.066);
-  padding: 50px;
   border-radius: 50px;
 }
 
@@ -38,6 +53,7 @@ textarea {
 }
 
 .form-item {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -56,33 +72,27 @@ label {
   cursor: pointer;
 }
 
+.form-button:disabled {
+  cursor: not-allowed;
+}
+
 @media (max-width: 1280px) {
   .form {
     width: 100%;
   }
 }
 
-@media (max-width: 1024px) {
-  .contact {
-    gap: 30px;
-  }
-}
-
 @media (max-width: 768px) {
-  .contact {
-    display: block;
-  }
-
   form {
     padding: 0;
     width: 100%;
   }
 
-  .contact-section {
+  .contacts-form {
     width: 100%;
   }
 
-  .contact-section:last-child {
+  .contacts-image {
     display: none;
   }
 }

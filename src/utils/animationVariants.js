@@ -1,3 +1,33 @@
+const heroDescrVariants = {
+  initial: {
+    x: -100,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const heroFollowVariants = {
+  initial: {
+    y: -100,
+    opacity: 0,
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+      staggerChildren: 0.2,
+    },
+  },
+};
+
 const textVariants = {
   initial: {
     x: -100,
@@ -102,4 +132,6 @@ export {
   imgVariants,
   projectsTextVariants,
   contactFormVariants,
+  heroDescrVariants,
+  heroFollowVariants,
 };

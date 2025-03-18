@@ -7,15 +7,15 @@ const Speech = () => {
     <motion.div
       animate={{ opacity: [0, 1] }}
       transition={{ duration: 1 }}
-      className="bubble_container"
+      className="bubble-container"
     >
       <div className="bubble">
         <TypeAnimation
           sequence={[
             1000,
-            'Same substring at the start will only be typed out once, initially',
+            'Transforming concepts into reality...',
             1000,
-            'Lorem ipsum dolor sit amet lerinat consectetur adipisicing. ',
+            'With modern technologies and a passion for perfection.',
             1000,
           ]}
           wrapper="span"

@@ -1,12 +1,8 @@
 import React from 'react';
 import { motion } from 'motion/react';
 
-import { technologiesVariants } from '../../constants/animationVariants';
-import {
-  webList,
-  animationList,
-  perfomanceList,
-} from '../../constants/services';
+import { technologiesVariants } from '../../utils/animationVariants';
+import { webList, animationList, perfomanceList } from '../../utils/services';
 
 import './style.css';
 
@@ -17,7 +13,7 @@ const Web = () => {
       initial="initial"
       animate="animate"
     >
-      <motion.h3 className="service_name">
+      <motion.h3 className="details-title">
         Creating web applications that load fast, adapt to any device, and
         integrate seamlessly with the backend
       </motion.h3>
@@ -25,7 +21,7 @@ const Web = () => {
       <motion.ul variants={technologiesVariants}>
         {webList.map((item) => (
           <motion.p
-            className="service_list_item"
+            className="details-item"
             variants={technologiesVariants}
             key={item.id}
           >
@@ -44,7 +40,7 @@ const Animation = () => {
       initial="initial"
       animate="animate"
     >
-      <h3 className="service_name">
+      <h3 className="details-title">
         Adding animations that make your website more engaging and improve user
         experience.
       </h3>
@@ -52,7 +48,7 @@ const Animation = () => {
       <motion.ul variants={technologiesVariants}>
         {animationList.map((item) => (
           <motion.p
-            className="service_list_item"
+            className="details-item"
             variants={technologiesVariants}
             key={item.id}
           >
@@ -71,7 +67,7 @@ const Perfomance = () => {
       initial="initial"
       animate="animate"
     >
-      <h3 className="service_name">
+      <h3 className="details-title">
         Optimizing your website’s code, improve loading speed, and boost SEO
         rankings.
       </h3>
@@ -79,7 +75,7 @@ const Perfomance = () => {
       <motion.ul variants={technologiesVariants}>
         {perfomanceList.map((item) => (
           <motion.p
-            className="service_list_item"
+            className="details-item"
             variants={technologiesVariants}
             key={item.id}
           >

@@ -102,13 +102,10 @@ const projectsList = [
     desc: 'An application designed for generating, voicing, and publishing podcasts using AI. It leverages OpenAI for voice synthesis, allowing users to create podcasts quickly and easily. The app is built with  HTML, JavaScript, Next.js, MongoDB, Tailwind.',
     link: 'https://ai-clue-hu076fyil-roman-y-k.vercel.app/',
   },
-  // {
-  //   id: 5,
-  //   img: '/p2.png',
-  //   title: 'X-Store',
-  //   desc: 'Responsive e-commerce web application featuring seamless pagination and a user-friendly interface. Built with modern web technologies, it ensures fast loading and optimal performance across devices: JavaScript, React, Node.js, Express, Axios, Paypal, Bootstrap',
-  //   link: 'https://x-store.onrender.com',
-  // },
 ];
+
+const formErrors = {
+  user_email: 'Name is required',
+};
 
 export { services, webList, animationList, perfomanceList, projectsList };
