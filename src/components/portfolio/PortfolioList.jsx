@@ -36,7 +36,12 @@ const PortfolioItem = ({ item }) => {
       >
         <motion.h2 variants={projectsTextVariants}>{item.title}</motion.h2>
         <motion.p variants={projectsTextVariants}>{item.desc}</motion.p>
-        <motion.a variants={projectsTextVariants} href={item.link}>
+        <motion.a
+          variants={projectsTextVariants}
+          href={item.link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <button>View Project</button>
         </motion.a>
       </motion.div>

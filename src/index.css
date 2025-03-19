@@ -37,12 +37,6 @@ section {
   scroll-snap-align: center;
 }
 
-@media (max-width: 640px) {
-  .container {
-    /* min-width: max-content; */
-  }
-}
-
 @media (min-width: 640px) {
   .container {
     max-width: 640px;

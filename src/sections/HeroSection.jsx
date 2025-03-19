@@ -14,15 +14,15 @@ const HeroSection = () => {
       <HeroRight />
 
       <div className="hero-bg">
-        {/* <Canvas
-            dpr={[1, 1]}
-            gl={{ powerPreference: 'low-power' }}
-            frameloop="always"
-          >
-            <Suspense fallback="loading...">
-              <Shape />
-            </Suspense>
-          </Canvas> */}
+        <Canvas
+          dpr={[1, 1]}
+          gl={{ powerPreference: 'low-power' }}
+          frameloop="always"
+        >
+          <Suspense fallback="loading...">
+            <Shape />
+          </Suspense>
+        </Canvas>
 
         <div className="hero-image">
           <img src="/hero.png" alt="" />
