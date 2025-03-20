@@ -74,7 +74,7 @@ const ContactsForm = () => {
             onInput={handleInput}
             type="text"
             name="user_name"
-            placeholder="John Doe"
+            placeholder="John Smith"
           />
           {formErrors.user_name && (
             <span className="tooltip">{formErrors.user_name}</span>

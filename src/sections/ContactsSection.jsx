@@ -3,7 +3,7 @@ import React from 'react';
 import ContactsForm from '../components/contact/ContactsForm';
 import ContactSvg from '../components/contact/ContactSvg';
 
-const ContsctsSection = () => {
+const ContactsSection = () => {
   return (
     <section className="contact-section" id="contact">
       <ContactsForm />
@@ -12,4 +12,4 @@ const ContsctsSection = () => {
   );
 };
 
-export default ContsctsSection;
+export default ContactsSection;

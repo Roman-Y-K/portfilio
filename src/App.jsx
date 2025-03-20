@@ -1,7 +1,7 @@
 import HeroSection from './sections/HeroSection';
 import ServicesSection from './sections/ServicesSection';
 import PortfolioSection from './sections/PortfolioSection';
-import ContsctsSection from './sections/ContsctsSection';
+import ContactsSection from './sections/ContactsSection';
 
 const App = () => {
   return (
@@ -9,7 +9,7 @@ const App = () => {
       <HeroSection />
       <ServicesSection />
       <PortfolioSection />
-      <ContsctsSection />
+      <ContactsSection />
     </div>
   );
 };
